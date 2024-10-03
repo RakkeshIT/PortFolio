@@ -79,8 +79,12 @@ nav ul li a:hover::before {
     background-size: cover;
 }
 
-.Front-Page .texts a {
-    margin: 20px 0px 7px 0px;
+/* .Front-Page .texts {
+    position: relative;
+} */
+
+.Front-Page .texts a.Download__Btn {
+    margin: 20px 0px 15px 0px;
     background-color: #a231f3;
     text-align: center;
     padding: 2px 10px;
@@ -89,7 +93,7 @@ nav ul li a:hover::before {
     box-shadow: 0 0 5px #8e37cc;
 }
 
-.Front-Page .texts a:hover {
+.Front-Page .texts a.Download__Btn:hover {
     transition: 0.5s;
     box-shadow: 0 0 15px #8e37cc;
     scale: 1.075;
@@ -120,6 +124,29 @@ nav ul li a:hover::before {
     box-shadow: 0 0 25px #e207e9;
     background-color: #e207e9;
     scale: 1.255;
+}
+
+.Front-Page h1.Name-animated {
+    animation: Name 2s;
+}
+
+
+.Front-Page .Name-Animated-2 {
+    animation: Name-Two 2s;
+}
+
+@keyframes Name {
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+}
+
+@keyframes Name-Two {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
 }
 
 .Front-Page .card {
@@ -154,6 +181,10 @@ nav ul li a:hover::before {
     border-radius: 12px;
 }
 
+.Front-Page .Name-Animated-2 {
+    animation: Name-Two 2s;
+}
+
 .Front-Page .row .cards .card-img-top {
     animation: 2s infinite alternate ease-in;
 }
@@ -186,6 +217,7 @@ nav ul li a:hover::before {
 .Skill-Section {
     /* height: 100vh;
     max-width: 100%; */
+    margin-top: 150px;
     margin-bottom: 50px;
 }
 
@@ -228,12 +260,80 @@ nav ul li a:hover::before {
 
 /* PROJECT SECTION END*/
 
+/* TCS NQT Page Styling  Start */
+.TCS__Page {
+    height: 100vh;
+    max-width: 100%;
+    display: grid;
+    margin-top: 50px;
+}
+
+.TCS__Page a.Score__Card {
+    text-decoration: none;
+    color: #ffffff;
+    /* border: 1px solid #d59bff; */
+    padding: 2px 20px;
+    background: linear-gradient(to right, #8e37cc, magenta);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    top: 50px;
+    transition: .7s;
+}
+
+.TCS__Page a.Score__Card:hover {
+    background: linear-gradient(to right, magenta, #8e37cc);
+    transition: .7s;
+}
+
+.TCS__Page h3.Score {
+    color: magenta;
+}
+
+.TCS__Page .row {
+    margin-top: 50px;
+}
+
+.TCS__Page .row .card {
+    padding: 10px;
+    margin-bottom: 20px;
+    /* background-color: transparent; */
+    /* color: #ffffff; */
+    border: 1px solid #ec0606;
+    /* width: 50%;
+    margin: auto; */
+    transition: .7s;
+    cursor: pointer;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.TCS__Page .row .card:hover {
+    transition: .7s;
+    box-shadow: 0 0 10px #ec0606;
+}
+
+.TCS__Page .row .card-title {
+    /* color: #d59bff; */
+    text-transform: capitalize;
+    text-shadow: 0 0 10px #d59bff;
+    font-weight: 400;
+}
+
+/* TCS NQT Page Styling  End*/
+
 /* CONTACT SECTION  */
 .Contact-Section {
     /* height: 100vh; */
     max-width: 100%;
     margin-top: 100px;
     margin-bottom: 50px;
+}
+
+.Contact-Section .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 /* CONTACT SECTION END   */
@@ -315,6 +415,14 @@ nav ul li a:hover::before {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .TCS__Page a.Score__Card {
+        position: static;
+    }
+
+    .TCS__Page {
+        height: 150vh;
     }
 
     /* CONTACT SECTION  */
