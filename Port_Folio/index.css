@@ -49,7 +49,9 @@ nav ul li a::before {
     box-shadow: 0 0 7px #a649e9;
     transition: 0.7s;
 }
-
+.dropdown a:hover::before {
+    display: none;
+}
 nav ul li a:hover::before {
     content: '';
     position: absolute;
@@ -259,6 +261,20 @@ nav ul li a:hover::before {
 }
 
 /* PROJECT SECTION END*/
+
+/* WORK PAGE */
+.WorkPage{
+    height: 100vh;
+    max-width: 100rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.WorkPage .Buttons a{
+    margin-bottom: 10px;
+}
+/* WORK PAGE END */
 
 /* TCS NQT Page Styling  Start */
 .TCS__Page {

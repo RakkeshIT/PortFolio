@@ -1,0 +1,37 @@
+.A_Container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: #fff;
+}
+.A_Content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.A_Title{
+    font-weight: 300;
+    letter-spacing: .23rem;
+    font-size: 3rem;
+}
+.A_SubContent{
+    width: 50%;
+    &>p{
+        text-align: justify;
+    }
+    & > .A_Button{
+        background: linear-gradient(150deg, #0a99db,#d802d8);
+        padding: 4px 20px;
+        border-radius: 10px;
+    }
+}
+.A_Image{
+    & > img{
+        width: 70%;
+    }
+}
+

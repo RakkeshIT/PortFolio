@@ -1,0 +1,11 @@
+:root {
+  --yellow: #fac936;
+  --orange: #faa318;
+  --black:#000000;
+  --white:#ffffff;
+  --whiteMedium:#252525;
+}
+img{
+  width: 250px;
+  border-radius: 20px;
+}

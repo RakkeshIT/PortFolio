@@ -1,0 +1,105 @@
+.About_Main_Container{
+    height: 100vh;
+    max-width: 100rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.About_Container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.A_Content{
+    width: 50%;
+}
+.A_Text{
+    text-align: justify;
+}
+.A_Title{
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: .25rem;
+    position: relative;
+    text-align: center;
+}
+.A_Title::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100px;
+    background-color: var(--orange);
+    bottom: 0;
+    border-radius: 20px;
+}
+.A_Contact{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-top: 30px;
+    text-decoration: none;
+    & > a{
+        background-color: rgb(41, 41, 41);
+        color: #e0e0e0;
+        padding: 5px 10px;
+        border-radius: 10px;
+        box-shadow: 0 -6px 10px #4e4e4e inset;
+        transition: .6s;
+    }
+    & > a:hover{
+        letter-spacing: .02rem;
+        transition: .6s;
+    }
+}
+.A_Image{
+    animation: About_Profile 8s ease-in-out infinite 1s alternate;
+}
+/* Card Styling */
+.A_Card{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    & > a{
+        padding: 4px 22px;
+        border-radius: 14px;
+        & > div > p> i{
+            color: var(--orange) !important;
+        }& > div > h4{
+            font-weight: bold;
+        }
+    }
+}
+@keyframes About_Profile {
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 70% 60%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100%{
+        border-radius:60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+@media all and (max-width:900px) {
+    .About_Container{
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+    .A_Title{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .A_Contact {
+       justify-content: center;
+    }
+
+}
+@media all and (max-width:556px) {
+    .A_Content{
+        width: 70%;
+    }
+}

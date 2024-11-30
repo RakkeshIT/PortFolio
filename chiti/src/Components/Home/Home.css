@@ -1,0 +1,43 @@
+
+.H_Container{
+    height: 90vh;
+    max-width: 100rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.H_Content{
+    & > .H_TCS{
+       border: 1px solid #680397;
+       padding: 6px 40px;
+       border-radius: 20px;
+       box-shadow: 0 4px 10px #42035fa8 inset;
+       & > i {
+        position: relative;
+        right: 10px;
+        color: yellow;
+       }
+    }
+    & > .H_TCS:hover{
+        box-shadow:0 0 10px #c763f57a, 0 4px 10px #42035fa8 inset;
+        transition: .7s !important;
+    }
+}
+.H_Button{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+    & > .CoverLetter{
+        background: linear-gradient(150deg, #0a99db,#d802d8);
+        padding: 4px 20px;
+        border-radius: 10px;
+    }
+    & > .Resume{
+        border: 1px solid #d497fdaf;
+        padding: 4px 20px;
+        border-radius: 10px;
+    }
+}
