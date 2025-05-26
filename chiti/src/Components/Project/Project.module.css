@@ -1,0 +1,202 @@
+.E_Container{
+    /* height: 100vh; */
+    max-width: 100%;
+    &>.E_Title{
+        text-align: center;
+    }
+}
+
+.Timelins{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.Timelins::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: #2059f7;
+    box-shadow: 0 0 10px #2059f7;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    animation: movedown 4s linear forwards;
+}
+@keyframes movedown {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+.Container{
+    position: relative;
+    padding: 20px 3px;
+    width: 30%;
+    text-align: center;
+    opacity: 0;
+    animation: movedown1 4s linear forwards;
+    & > .Box{
+        position: relative;
+        background: #252525;
+        padding: 8px 10px;
+        border-radius: 20px;
+        color: #fff;
+        border: 1px solid #2059f7;
+        box-shadow: 0 0 30px #2059f7;
+        line-height: 20px;
+        & > .Tile_Subtitle{
+            line-height: 10px;
+        }
+    }
+   
+}
+.Tile_Subtitle h2{
+    font-weight: 300;
+    font-size: 20px;
+}
+.Tile_Subtitle h4{
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: .25rem;
+}
+.Timelins{
+    position: relative;
+}
+.TimelinImage{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 40px;
+}
+.TimelinImage2{
+    position: absolute;
+    left: -10px;
+    top: 10px;
+    z-index: 1;
+    width: 40px;
+    background-color: #fff;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+.TimelinImage3{
+    position: absolute;
+    right: -10px;
+    top: 10px;
+    z-index: 1;
+    width: 40px;
+    animation: react 3s infinite linear;
+}
+.TimelinImage4{
+    position: absolute;
+    left: -10px;
+    top: 10px;
+    z-index: 1;
+    width: 30px;
+    background-color: #fff;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+@keyframes react {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes movedown1 {
+ 0%{
+    opacity: 1;
+    transform: translateY(-30px);
+ }   
+ 100%{
+    opacity: 1;
+    transform: translateY(0px);
+ }
+}
+.Container:nth-child(1){
+    animation-delay: 0s;
+}
+.Container:nth-child(2){
+    animation-delay: 1s;
+}
+.Container:nth-child(3){
+    animation-delay: 2s;
+}
+.Container:nth-child(4){
+    animation-delay: 3s;
+}
+.Left_Container{
+    right: -200px;
+}
+.Right_Container{
+    left: 52%;
+}
+/* Responsive */
+@media all and (max-width:1200px) {
+    .Left_Container{
+        right: -150px;
+    }
+    .Right_Container{
+        left: 55%;
+    }
+   .Box h2, h4{
+        font-size: 14px;
+   }
+}
+@media all and (max-width:1050px) {
+
+   .Box h2{
+        font-size: 13px;
+        font-weight: bolder;
+   }
+   .Box h4{
+    font-size: 12px;
+   }
+   .Left_Container{
+    right: -130px;
+}
+}
+
+@media all and (max-width:900px) {
+    .Container{
+        width: 40%;
+    }.Left_Container{
+        left: 7%;
+    }
+    .Right_Container{
+        left: 52%;
+    }
+}
+@media all and (max-width:650px) {
+    .Container{
+        width: 80%;
+        margin: auto;
+    }
+    .Timelins::after{
+        left: 5%;
+    }
+    .Left_Container{
+        left: 0%;
+    }
+    .Right_Container{
+        left: 0%;
+    }
+    .TimelinImage{
+        position: absolute;
+        left: -10px;
+        top: -10px;
+        z-index: 1;
+        width: 40px;
+    }
+    .TimelinImage3{
+        position: absolute;
+        left: -10px;
+        top: 10px;
+        z-index: 1;
+        width: 40px;
+    }
+}

@@ -1,0 +1,25 @@
+.C_Container{
+    height: 100vh;
+    max-width: 100%;
+}
+
+.Title{
+    text-align: center;
+}
+
+.Flex_Container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.Content{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px,1fr));
+    gap: 20px;
+}
+.Card{
+    background-color: #1c1c1c;
+    text-align: center;
+    padding: 10px 0px;
+    cursor: pointer;
+}

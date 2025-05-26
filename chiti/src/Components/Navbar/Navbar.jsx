@@ -1,23 +1,25 @@
-import { useState } from 'react'
+import {useState } from 'react'
 import Logo from '../../assets/icons8-r-94.png'
 import './Navbar.css'
+import { Link } from 'react-scroll';
 export const Navbar = () => {
     const [bar, setBar] = useState(false);
     const handleClicked = () => {
         setBar(!bar)
     }
+    
     return(
         <div className="N_Container">
             <a href="" className='N_Title' style={{display:'flex',alignItems:'center',gap:'10px'}}><img src={Logo} alt="Logo" 
              width='40'/><span>Rakki</span></a>
 
              <ul id='N_Menus' className={bar ? '#N_Menus active':'#N_Menus'}>
-                <li className='N_Item'><a href="" className='N_Link'>Home</a></li>
-                <li className='N_Item'><a href="" className='N_Link'>About</a></li>
-                <li className='N_Item'><a href="" className='N_Link'>Skills</a></li>
-                <li className='N_Item'><a href="" className='N_Link'>Projects</a></li>
-                <li className='N_Item'><a href="" className='N_Link'>My Works</a></li>
-                <li className='N_Item'><a href="" className='N_Link'>Services</a></li>
+                <li className='N_Item'><Link to='Home' smooth={true} duration={500}> Home</Link></li>
+                <li className='N_Item'><Link to='About' smooth={true} duration={500}> About</Link></li>
+                <li className='N_Item'><Link to='Skills' smooth={true} duration={500}> Skills</Link></li>
+                <li className='N_Item'><Link to='Project' smooth={true} duration={500}> Projects</Link></li>
+                <li className='N_Item'><Link to='Experience' smooth={true} duration={500}> Experience</Link></li>
+                <li className='N_Item'><Link to='Contact' smooth={true} duration={500}> Contact</Link></li>
              </ul>
 
              <div id='N_Icons' className={bar ? '#N_Icons active': '#N_Icons'}>

@@ -1,12 +1,13 @@
-import './Home.css'
+import { Link } from 'react-router-dom'
+import Home from './Home.module.css'
 import { TypeAnimation } from 'react-type-animation'
-export const Home = () => {
+export const HomePage = () => {
     return(
         <>
-            <div className="H_Container">
-                <div className="H_Content">
-                    <a href="#" className='H_TCS'><i class="fa-solid fa-bolt"></i><span>TCS NQT SCORE</span></a>
-                    <h1 className="H_Title" style={{color:'#fff'}}>Rakkesh Kumar</h1>
+            <div className={Home.H_Container}>
+                <div className={Home.H_Content}>
+                    <a href="#" className={Home.H_TCS}><i className="fa-solid fa-bolt"></i><span>TCS NQT SCORE</span></a>
+                    <h1 className={Home.H_Title} style={{color:'#fff'}}>Rakkesh Kumar</h1>
                    <TypeAnimation
                         sequence={[
                             'Full Stack Developer',
@@ -23,9 +24,9 @@ export const Home = () => {
                         repeat={Infinity}
                         style={{color:'#fff',fontSize:"1rem", fontWeight:'600'}}
                    />
-                   <div className='H_Button'>
-                    <a href="" className='CoverLetter'>Cover Letter</a>
-                    <a href="" className='Resume'>Resume</a>
+                   <div className={Home.H_Button}>
+                    <a href="" className={Home.CoverLetter}>Cover Letter</a>
+                    <a href="/public/asset/file/Rakkesh.pdf" download='Rakkesh Full Stack Developer' className={Home.Resume}>Resume</a>
                    </div>
                 </div>
             </div>
