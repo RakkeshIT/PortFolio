@@ -23,7 +23,7 @@ export const Navbar = () => {
              </ul>
 
              <div id='N_Icons' className={bar ? '#N_Icons active': '#N_Icons'}>
-                <a href=""><i className="fa-regular fa-address-book"></i></a>
+                {/* <a href=""><i className="fa-regular fa-address-book"></i></a> */}
                 <a href=""><i className="fa-brands fa-linkedin-in"></i></a>
                 <a href=""><i className="fa-brands fa-square-github"></i></a>
              </div>
