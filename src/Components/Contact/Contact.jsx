@@ -26,7 +26,7 @@ const Contact = () => {
           <div className={`${Style.Content}`}>
             {Card.map((items) => (
               <div className={`${Style.Card}`} key={items.id}>
-                <a href={items.link} rel="noopener noreferrer" target='_blank'>
+                <a href={items.link} rel="noopener noreferrer" >
                   <img src={items.src} alt={items.alt} />
                 </a>
               </div>
