@@ -11,21 +11,21 @@ export const Navbar = () => {
     return(
         <div className="N_Container">
             <a href="" className='N_Title' style={{display:'flex',alignItems:'center',gap:'10px'}}><img src={Logo} alt="Logo" 
-             width='40'/><span>Rakki</span></a>
+             width='40'/><span></span></a>
 
              <ul id='N_Menus' className={bar ? '#N_Menus active':'#N_Menus'}>
-                <li className='N_Item'><Link to='Home' smooth={true} duration={500}> Home</Link></li>
-                <li className='N_Item'><Link to='About' smooth={true} duration={500}> About</Link></li>
-                <li className='N_Item'><Link to='Skills' smooth={true} duration={500}> Skills</Link></li>
-                <li className='N_Item'><Link to='Project' smooth={true} duration={500}> Projects</Link></li>
-                <li className='N_Item'><Link to='Experience' smooth={true} duration={500}> Experience</Link></li>
-                <li className='N_Item'><Link to='Contact' smooth={true} duration={500}> Contact</Link></li>
+                <li className='N_Item'><Link className={Navbar.Nav_Link} to='Home' smooth={true} duration={500}> Home</Link></li>
+                <li className='N_Item'><Link className={Navbar.Nav_Link} to='About' smooth={true} duration={500}> About</Link></li>
+                <li className='N_Item'><Link className={Navbar.Nav_Link} to='Skills' smooth={true} duration={500}> Skills</Link></li>
+                <li className='N_Item'><Link className={Navbar.Nav_Link} to='Project' smooth={true} duration={500}> Projects</Link></li>
+                <li className='N_Item'><Link className={Navbar.Nav_Link} to='Experience' smooth={true} duration={500}> Experience</Link></li>
+                <li className='N_Item'><Link className={Navbar.Nav_Link} to='Contact' smooth={true} duration={500}> Contact</Link></li>
              </ul>
 
              <div id='N_Icons' className={bar ? '#N_Icons active': '#N_Icons'}>
                 {/* <a href=""><i className="fa-regular fa-address-book"></i></a> */}
-                <a href=""><i className="fa-brands fa-linkedin-in"></i></a>
-                <a href=""><i className="fa-brands fa-square-github"></i></a>
+                <a href=""><i className="fa-brands fa-linkedin-in" style={{color:'#0077B5'}}></i></a>
+                <a href=""><i className="fa-brands fa-square-github" style={{color: '#4078c0'}}></i></a>
              </div>
 
              <div className='N_Mobile'>

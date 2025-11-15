@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import Home from './Home.module.css'
 import { TypeAnimation } from 'react-type-animation'
 export const HomePage = () => {
@@ -6,7 +5,7 @@ export const HomePage = () => {
         <>
             <div className={Home.H_Container}>
                 <div className={Home.H_Content}>
-                    <a href="#" className={Home.H_TCS}><i className="fa-solid fa-bolt"></i><span>TCS NQT SCORE</span></a>
+                    {/* <a href="#" className={Home.H_TCS}><i className="fa-solid fa-bolt"></i><span>TCS NQT SCORE</span></a> */}
                     <h1 className={Home.H_Title} style={{color:'#fff'}}>Rakkesh Kumar</h1>
                    <TypeAnimation
                         sequence={[
@@ -17,7 +16,9 @@ export const HomePage = () => {
                             'Laravel Developer',
                             1000,
                             'Web Developer',
-                            1000
+                            1000,
+                            "MERN Stack Developer",
+                            1000,
                         ]}
                         wrapper='span'
                         speed={50}
