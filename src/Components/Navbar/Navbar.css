@@ -61,7 +61,7 @@
         display: block;
         position: absolute;
         right: 80px;
-        
+        z-index: 0;
     }
     .N_Item{
         cursor: pointer;
@@ -112,19 +112,19 @@
         transition: .7s;
     }
 
-   .N_Container ul li {
+   ul li {
         margin-top: 20px;
     }
 
     #N_Icons {
         position: fixed;
         bottom: 0;
-        top: 350px;
-        right: 0px;
+        top: 450px;
         width: 250px;
-        right: -300px;
+        right: -400px;
         display: flex;
-        gap: 30px;
+        /* gap: 30px; */
+        margin-left: 50px;
 
     }
 }
