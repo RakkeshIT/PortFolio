@@ -1,39 +1,141 @@
-.E_Container {
-    /* height: 100vh; */
-    max-width: 100%;
+/* Main Container */
+.Container {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
 }
 
-.Title {
-    text-align: center;
+.MainTitle {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 50px;
+  background: linear-gradient(90deg, #ff00cc, #333399);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
-.Internship, .P_Exp {
-    padding: 40px;
-}
-.Internship .Button{
-    background-color: #333399;
-    padding: 0px 10px;
-    border: .5px solid #fff;
-    border-radius: 5px;
-}
-.Intern, .Exp {
-    font-size: 15px;
-    font-weight: 200;
-    width: fit-content;
-    background: #ff00cc;
-    background: -webkit-linear-gradient(to right, #333399, #ff00cc);
-    background: linear-gradient(to right, #333399, #ff00cc);
-    box-shadow: 0 0 10px #ff00cc;
-    padding: 0px 30px;
-    border-radius:5px;
-    animation: Text 1s infinite alternate ease-in;
+/* Timeline Layout */
+.Timeline {
+  position: relative;
+  margin-left: 25px;
+  padding-left: 20px;
+  border-left: 3px solid rgba(255, 255, 255, 0.2);
 }
 
-@keyframes Text {
-    0%{
-           box-shadow: 0 0 10px #ff00cc;
-    }
-    100%{
-           box-shadow: 0 0 30px #ff00cc;
-    }
+/* Glowing Gradient Line */
+.Timeline::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(#ff00cc, #333399, #ff00cc);
+  animation: glowline 3s infinite ease-in-out;
+}
+
+@keyframes glowline {
+  0% { filter: drop-shadow(0 0 3px #ff00cc); }
+  100% { filter: drop-shadow(0 0 10px #333399); }
+}
+
+/* Timeline Item Wrapper */
+.TimelineItem {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+/* Icon Circle */
+.Icon {
+  position: absolute;
+  left: -45px;
+  top: 0;
+  background: linear-gradient(135deg, #ff00cc, #333399);
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  box-shadow: 0 0 10px #ff00cc;
+  animation: pulseIcon 1.5s infinite alternate;
+}
+
+@keyframes pulseIcon {
+  0% { box-shadow: 0 0 10px #ff00cc; }
+  100% { box-shadow: 0 0 20px #333399; }
+}
+
+/* Card Content */
+.Content {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.Content:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.45);
+}
+
+/* Text Styling */
+.Role {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  background: linear-gradient(to right, #ff00cc, #333399);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.Duration {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  color: #ddd;
+}
+
+.Description {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #eee;
+}
+
+.SubHeading {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #ff00cc;
+}
+
+.List {
+  margin-top: 8px;
+}
+
+.List li {
+  padding: 5px 0;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* Button */
+.Button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #333399, #ff00cc);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.Button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #ff00cc;
 }
