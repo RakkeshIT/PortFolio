@@ -12,14 +12,14 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     z-index: 999;
 }
-ul {
+.N_Container ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex; /* horizontal navbar */
 }
 
-ul li {
+.N_Container ul li {
   display: inline-block;
   padding: 10px 20px;
   font-weight: 100 !important;
@@ -27,19 +27,19 @@ ul li {
   cursor: pointer;
 }
 
-ul li::before {
+.N_Container ul li::before {
   content: '';
   position: absolute;
   height: 3px;
-  width: 0; /* start hidden */
+  width: 0; 
   background-color: #fff;
   bottom: 10px;
   left: 0;
-  transition: width 0.3s ease; /* smooth animation */
+  transition: width 0.3s ease; 
 }
 
-ul li:hover::before {
-  width: 70%; /* expand underline on hover */
+.N_Container ul li:hover::before {
+  width: 70%; 
 }
 
 #N_Icons {
@@ -112,7 +112,7 @@ ul li:hover::before {
         transition: .7s;
     }
 
-    ul li {
+   .N_Container ul li {
         margin-top: 20px;
     }
 
