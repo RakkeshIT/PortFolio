@@ -23,9 +23,12 @@ export const Navbar = () => {
              </ul>
 
              <div id='N_Icons' className={bar ? '#N_Icons active': '#N_Icons'}>
-                {/* <a href=""><i className="fa-regular fa-address-book"></i></a> */}
-                <a href=""><i className="fa-brands fa-linkedin-in" style={{color:'#0077B5'}}></i></a>
-                <a href=""><i className="fa-brands fa-square-github"></i></a>
+                <a href="#" className='icon'>
+                    <i className="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#" className='icon'>
+                    <i className="fa-brands fa-github"></i>
+                </a>
              </div>
 
              <div className='N_Mobile'>
