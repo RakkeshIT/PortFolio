@@ -80,7 +80,7 @@
     .N_Mobile {
         display: block;
         position: absolute;
-        right: 140px;
+        right: 100px;
         top: 15.5px;
     }
     .N_Item{
@@ -142,10 +142,11 @@
         /* bottom: 0; */
         top: 20px;
         width: 250px;
-        right: -400px;
+        right: -200px;
         display: flex;
         /* gap: 30px; */
         margin-left: 50px;
+        transform: translateX(40px);
 
     }
 }
