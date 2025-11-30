@@ -27,7 +27,7 @@ export const HomePage = () => {
                    />
                    <div className={Home.H_Button}>
                     <a href="" className={Home.CoverLetter}>Cover Letter</a>
-                    <a href="/public/asset/file/Rakkesh.pdf" download='Rakkesh Full Stack Developer' className={Home.Resume}>Resume</a>
+                    <a href="/public/Rakkesh.pdf" download='Rakkesh Full Stack Developer' className={Home.Resume}>Resume</a>
                    </div>
                 </div>
             </div>
