@@ -23,10 +23,10 @@ export const Navbar = () => {
              </ul>
 
              <div id='N_Icons' className={bar ? '#N_Icons active': '#N_Icons'}>
-                <a href="#" className='icon'>
+                <a href="https://www.linkedin.com/in/rakkeshit/" className='icon'>
                     <i className="fa-brands fa-linkedin"></i>
                 </a>
-                <a href="#" className='icon'>
+                <a href="https://github.com/RakkeshIT" className='icon'>
                     <i className="fa-brands fa-github"></i>
                 </a>
              </div>
