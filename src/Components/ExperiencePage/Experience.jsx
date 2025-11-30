@@ -29,7 +29,7 @@ const Experience = () => {
               <li>Role & Permission System</li>
             </ul>
 
-            <a href="/public/internship certificate_repaired.pdf" download className={Style.Button}>
+            <a href="/internship certificate_repaired.pdf" download="Rakkesh-Intern-Cert" className={Style.Button}>
               Download Certificate
             </a>
           </div>
